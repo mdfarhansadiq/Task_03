@@ -2,14 +2,17 @@ const mongoose = require('../utils/mongoose');
 const constants = require('../utils/constants')
 
 const MongooseSchema = new mongoose.Schema({
-    email: {
-        type: String,
-        required: true,
-        unique: true
-    },
     name: {
         type: String,
-        required: true,
+        //required: true,
+    },
+    email: {
+        type: String,
+        //required: true,
+        // unique: true
+    },
+    picture: {
+        type: String,
     },
     status: {
         type: String,
